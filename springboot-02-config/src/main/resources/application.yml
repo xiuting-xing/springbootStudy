@@ -1,0 +1,16 @@
+#配置文件和spring.factories文件一一对应
+#在我们这个文件中能配置的东西都存在一个固有的规律
+#可以通过debug=true来判断那些生效了，那些没有生效
+server:
+  port: 8010
+person:
+  name: ken_xing
+  age: 33
+  lists:
+    - code
+    - movie
+    - wife
+  map: {k1: v1,k2: v2}
+  dog:
+    name: ken's dog
+    age: 3
