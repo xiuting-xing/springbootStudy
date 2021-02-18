@@ -273,8 +273,9 @@ Starter for building WebFlux applications using Spring Framework’s Reactive We
 spring-boot-starter-websocket
 
 Starter for building WebSocket applications using Spring Framework’s WebSocket support
-```
-自动装配的原理
+````
+
+#### 2、自动装配的原理
 1）、SpringBoot启动时会加载大量的自动配置类；
 2）、我们看我们需要的功能有没有在SpringBoot默认写好的自动配置类中；
 3）、我们再来看这个自定配置类中到底配置了那些组件；（只要我们用的组件存在在其中，我们就不用手动配置了）
@@ -282,7 +283,7 @@ Starter for building WebSocket applications using Spring Framework’s WebSocket
 xxxAutoConfigurartion：自动配置类；给容器添加组件
 xxxProperties：封装配置文件中相关属性
 
-主程序
+#### 主程序
 springboot 所有自动配置都是在启动的时候，扫描并加载：sprign.factories所有的自动配置类都在这里面。但是不一定生效，要判断条件是否成立，只要导入了对应的starter,就有对应的启动器了。有了启动器我们自动装配就会生效，然后就配置成功。
 1）、springboot在启动的时候，动路径/META-INF/spring.factories获取指定的值。
 2）、将这些自动配置的类导入容器中，自动配置就会生效。
